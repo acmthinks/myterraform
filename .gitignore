@@ -1,0 +1,11 @@
+.DS_Store
+*.backup
+.terraform/
+*.tfvars
+.terraform/
+*.tfstate
+.terraform.lock.hcl
+.devtmp/
+*.plan
+*.tfplan
+cra-report.json

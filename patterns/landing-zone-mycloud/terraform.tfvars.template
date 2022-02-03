@@ -1,0 +1,65 @@
+###############################################################################
+##  Define values for variables
+## these override the "default" values in variables.tf and can be overwritten
+## on the command line or in Schematics
+##
+## Uncomment the name value pairs (i.e. ibmcloud_api_key = "") and supply your 
+## values
+###############################################################################
+
+## Token value of an IBM Cloud API Key, this must have the proper roles and 
+## privileges to create, read, and edit IAM resources and VPC and VSI resources
+//ibmcloud_api_key = "abcdefghiJkLMnOPQrsTuvwxyz123456-7890ABCDEFG"
+
+## the cloud region in which to create resources
+//region      = "us-south"
+
+## the zone within the cloud region to create the VSI
+//zone        = "us-south-1"
+
+## the prefix that will be appended to all resources that will be created
+//prefix      = "acc-demo"
+
+## indicate whether you want an IBM Cloud Service ID created for the ADMIN 
+## access group. A Service ID does not belong to a person, rather it is an
+## IAM id that can be used for services (and it can have an API Key too)
+//is_admin_service_id = true
+
+## specify the email addresses of those who you want to be included in the
+## ADMIN access group. List email addresses as a list of strings with 
+## double quotes. You must have at least 1 email address.
+//admin_members = ["acm@us.ibm.com", "aaa@ibm.com"]
+
+## indicate whether you want an IBM Cloud Service ID created for the SRE 
+## access group. A Service ID does not belong to a person, rather it is an
+## IAM id that can be used for services (and it can have an API Key too)
+//is_sre_service_id = false
+
+## specify the email addresses of those who you want to be included in the
+## SRE access group. List email addresses as a list of strings with 
+## double quotes. You must have at least 1 email address.
+//sre_members   = ["acm@us.ibm.com"]
+
+## indicate whether you want an IBM Cloud Service ID created for the AUDIT 
+## access group. A Service ID does not belong to a person, rather it is an
+## IAM id that can be used for services (and it can have an API Key too)
+//is_audit_service_id = false
+
+## specify the email addresses of those who you want to be included in the
+## AUDIT access group. List email addresses as a list of strings with 
+## double quotes. You must have at least 1 email address.
+//audit_members = ["acm@us.ibm.com"]
+
+## indicate whether you want an IBM Cloud Service ID created for the USER 
+## access group. A Service ID does not belong to a person, rather it is an
+## IAM id that can be used for services (and it can have an API Key too)
+//is_users_service_id = true
+
+## specify the email addresses of those who you want to be included in the
+## USERS access group. List email addresses as a list of strings with 
+## double quotes. You must have at least 1 email address.
+//users_members = ["acm@us.ibm.com"]
+
+## specify the name of the ssh key to create a VSI with. The ssh key must
+## already exist and be in the 'region' you specify above. 
+//ssh_key = "andrea-ssh-key"
